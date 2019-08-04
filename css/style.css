@@ -1,0 +1,134 @@
+body {
+  font-family: Futura, 'Century Gothic', 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.30vw; /* 1.5vw for 5 */ 
+  background-color: white;
+  /* set padding and margin to 0 to remove default margins   */
+  padding: 0; 
+  margin: 0; 
+}
+
+.borderdiv {
+  border-left-style: solid;
+  border-width: 30px;
+  border-color: #eb8932;
+}
+
+.logodiv {
+  text-align: center;
+  margin: auto;
+}
+
+.logoimg {
+  width: 57vw;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+p {
+  text-align: center;
+}
+
+.footerdiv {
+  padding-top: 100px;
+  padding-bottom: 25px;
+  font-weight: normal;
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;		/* 1.2vw */
+}
+
+a {
+  color: #5BAF59;
+}
+
+
+.appContainer {
+  margin: auto;
+  width: 75vw; /* 70vw */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* 1fr 1fr 1fr 1fr 1fr */
+  grid-auto-rows: 12.5vw; /* this has to be appContainer width divided by 6 (14vw if 5) */
+  grid-gap: 0.9vw;
+}
+
+
+.sound-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #5BAF59;
+  border-style: solid;
+  border-width: 0.285vw; /* 4px */
+  border-color: #5BAF59;
+  cursor: pointer;
+  padding: 5px;
+  -webkit-transition: background-color 0.4s, color 0.4s, opacity 0.15s; /* Safari prior 6.1 */
+  transition: background-color 0.4s, color 0.4s, opacity 0.15s;
+}
+
+.sound-card:active {
+  opacity: 0.4;
+  background-color: #5BAF59;
+  color: #FFFFFF;
+}
+
+.sound-card-text {
+  padding: 3px;
+}
+
+/* hover effect only on web - so no sticky hover on mobile */
+@media (hover: hover) { 
+	.sound-card:hover { 
+	  background-color: #5BAF59;
+	  color: #FFFFFF;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .borderdiv {
+    border-width: 12px;
+  }
+  
+  .appContainer {
+	width: 81vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: 27vw;  /* this has to be appContainer width divided by 3 */
+	grid-gap: 10px;
+  }
+  
+  .logoimg {
+    width: 100%;
+    height: auto;
+    max-width: 80vw;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+  }
+  
+  .sound-card {
+	border-width: 3px;
+	padding: 3px;
+	cursor: pointer;
+  }
+  
+  body {
+  	font-size: 2.60vw;
+  }
+  
+  .footerdiv {
+  	 font-size: 13px;		/* 1.75vw */
+  	 padding-top: 50px;
+  }
+
+}
+
+
