@@ -60,13 +60,23 @@ class Sound extends React.Component {
 	if (this.props.sound.isPlaying && this.props.sound.soundName === this.props.audio.soundName && this.props.audio.currentlyPlaying) {
 	  speakerStyle += 'fa fa-volume-up fa-3x';
 	}
+	if (this.props.sound.isNew != null) {
 	return (
 // 	  React.createElement("div", { className: "sound-card",
 // 		onClick: () => this.props.playSound(this.props.sound.id) },
 // 	  React.createElement("div", { className: "sound-card-text" }, this.props.sound.soundName)));
 	  React.createElement("div", { className: "sound-card",
 		onClick: function() {return this.props.playSound(this.props.sound.id) }.bind(this)},
-	  React.createElement("div", { className: "sound-card-text" }, this.props.sound.soundName)));
+	  React.createElement("div", { className: "sound-card-text" }, this.props.sound.soundName),
+	  React.createElement("div", { className: "new-badge" }, 
+	  	React.createElement("img", { src: "assets/new_badge_fill.svg" }))));
+	}
+	else {
+	  return (
+	  	React.createElement("div", { className: "sound-card",
+		  onClick: function() {return this.props.playSound(this.props.sound.id) }.bind(this)},
+	    React.createElement("div", { className: "sound-card-text" }, this.props.sound.soundName)));
+	}
 
 
 
@@ -90,24 +100,32 @@ class App extends React.Component {
 			{ id: 10, soundName: 'TIME CRISIS CORRESPON- DENT (DROP)', soundURL: './sounds/tccorrespondent.mp3', isPlaying: false },
 			{ id: 11, soundName: 'TOP 5 ON ITUNES (DROP)', soundURL: './sounds/top5itunes.mp3', isPlaying: false },
 			{ id: 12, soundName: 'LADY DORITOS TOWN HALL (DROP)', soundURL: './sounds/ladydoritostownhall.mp3', isPlaying: false },
-			{ id: 13, soundName: 'THIS SHOW RULES', soundURL: './sounds/thisshowrules.mp3', isPlaying: false }, 
-			{ id: 14, soundName: 'ROUGH STUFF FOLKS', soundURL: './sounds/roughstufffolks.mp3', isPlaying: false },
-			{ id: 15, soundName: 'SEINFELD NUMBER CRUNCH', soundURL: './sounds/seinfeldnumbercrunch.mp3', isPlaying: false },
-			{ id: 16, soundName: 'ROCK\'S PLAYED OUT, DOG', soundURL: './sounds/rocksplayedout.mp3', isPlaying: false },
-			{ id: 17, soundName: 'BUT IN MY NEIGHBOR- HOOD...', soundURL: './sounds/butinmyneighborhood.mp3', isPlaying: false },
-			{ id: 18, soundName: 'BUFF TRAFFIC SITCH', soundURL: './sounds/bufftrafficsitch.mp3', isPlaying: false },
-			{ id: 19, soundName: 'BRUTAL', soundURL: './sounds/brutal.mp3', isPlaying: false },
-			{ id: 20, soundName: 'WELCOME TO MY LIFE', soundURL: './sounds/welcometomylife.mp3', isPlaying: false },
-			{ id: 21, soundName: 'BANKIN\' THE EPS', soundURL: './sounds/bankintheeps.mp3', isPlaying: false }, 
-			{ id: 22, soundName: 'BORGESIAN', soundURL: './sounds/borgesian.mp3', isPlaying: false },
-			{ id: 23, soundName: 'MASK OFF', soundURL: './sounds/maskoff.mp3', isPlaying: false },
-			{ id: 24, soundName: 'DIET COKE: BECAUSE I CAN', soundURL: './sounds/dietcoke.mp3', isPlaying: false },
-			{ id: 25, soundName: 'PRETTY TOUGH TONE', soundURL: './sounds/prettytoughtone.mp3', isPlaying: false },
-			{ id: 26, soundName: 'SMALL CHARCOAL GRILL', soundURL: './sounds/smallcharcoalgrill.mp3', isPlaying: false }, 
-			{ id: 27, soundName: 'AWFULLY HOT COFFEE POT', soundURL: './sounds/awfullyhotcoffeepot.mp3', isPlaying: false }, 
-			{ id: 28, soundName: 'OHHH!', soundURL: './sounds/boomoh.mp3', isPlaying: false },
-			{ id: 29, soundName: 'I\'M A VIBE GUY', soundURL: './sounds/imavibeguy.mp3', isPlaying: false },
-			{ id: 30, soundName: 'LONNIE\'S DAD', soundURL: './sounds/lonniesdad.mp3', isPlaying: false },
+			{ id: 13, soundName: 'ROUGH STUFF (DROP)', soundURL: './sounds/roughstuffdrop.mp3', isPlaying: false, isNew: true },
+			{ id: 14, soundName: 'THIS SHOW RULES', soundURL: './sounds/thisshowrules.mp3', isPlaying: false }, 
+			{ id: 15, soundName: 'ROUGH STUFF FOLKS', soundURL: './sounds/roughstufffolks.mp3', isPlaying: false },
+			{ id: 16, soundName: 'SEINFELD NUMBER CRUNCH', soundURL: './sounds/seinfeldnumbercrunch.mp3', isPlaying: false },
+			{ id: 17, soundName: 'ROCK\'S PLAYED OUT, DOG', soundURL: './sounds/rocksplayedout.mp3', isPlaying: false },
+			{ id: 18, soundName: 'BUT IN MY NEIGHBOR- HOOD...', soundURL: './sounds/butinmyneighborhood.mp3', isPlaying: false },
+			{ id: 19, soundName: 'BUFF TRAFFIC SITCH', soundURL: './sounds/bufftrafficsitch.mp3', isPlaying: false },
+			{ id: 20, soundName: 'BRUTAL', soundURL: './sounds/brutal.mp3', isPlaying: false },
+			{ id: 21, soundName: 'WELCOME TO MY LIFE', soundURL: './sounds/welcometomylife.mp3', isPlaying: false },
+			{ id: 22, soundName: 'BANKIN\' THE EPS', soundURL: './sounds/bankintheeps.mp3', isPlaying: false }, 
+			{ id: 23, soundName: 'BORGESIAN', soundURL: './sounds/borgesian.mp3', isPlaying: false },
+			{ id: 24, soundName: 'MASK OFF', soundURL: './sounds/maskoff.mp3', isPlaying: false },
+			{ id: 25, soundName: 'DIET COKE: BECAUSE I CAN', soundURL: './sounds/dietcoke.mp3', isPlaying: false },
+			{ id: 26, soundName: 'PRETTY TOUGH TONE', soundURL: './sounds/prettytoughtone.mp3', isPlaying: false },
+			{ id: 27, soundName: 'SMALL CHARCOAL GRILL', soundURL: './sounds/smallcharcoalgrill.mp3', isPlaying: false }, 
+			{ id: 28, soundName: 'AWFULLY HOT COFFEE POT', soundURL: './sounds/awfullyhotcoffeepot.mp3', isPlaying: false }, 
+			{ id: 29, soundName: 'OHHH!', soundURL: './sounds/boomoh.mp3', isPlaying: false },
+			{ id: 30, soundName: 'I\'M A VIBE GUY', soundURL: './sounds/imavibeguy.mp3', isPlaying: false },
+			{ id: 31, soundName: 'LONNIE\'S DAD', soundURL: './sounds/lonniesdad.mp3', isPlaying: false },
+			{ id: 32, soundName: 'NARCISSISM OF SMALL DIFFERENCE', soundURL: './sounds/narcissismofsmalldifference.mp3', isPlaying: false, isNew: true },
+			{ id: 33, soundName: 'STRONG CHOICE', soundURL: './sounds/strongchoice.mp3', isPlaying: false, isNew: true },
+			{ id: 34, soundName: 'IT\'S A DUMB TIME TO BE ALIVE', soundURL: './sounds/dumbtimetobealive.mp3', isPlaying: false, isNew: true },
+			{ id: 35, soundName: 'THAT\'S A PORTMAN- TEAU', soundURL: './sounds/thatsaportmanteau.mp3', isPlaying: false, isNew: true },
+			{ id: 36, soundName: '#THEBIG3 THAT MAKEMEME', soundURL: './sounds/thebig3thatmakememe.mp3', isPlaying: false, isNew: true },
+			{ id: 37, soundName: 'WANGS', soundURL: './sounds/wangs.mp3', isPlaying: false, isNew: true },
+			{ id: 38, soundName: 'NO FAP SUMMER', soundURL: './sounds/nofapsummer.mp3', isPlaying: false, isNew: true },
 	  	]};
 
 
