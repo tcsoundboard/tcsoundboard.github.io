@@ -101,6 +101,8 @@ class App extends React.Component {
 			{ id: 11, soundName: 'TOP 5 ON ITUNES (DROP)', soundURL: './sounds/top5itunes.mp3', isPlaying: false },
 			{ id: 12, soundName: 'LADY DORITOS TOWN HALL (DROP)', soundURL: './sounds/ladydoritostownhall.mp3', isPlaying: false },
 			{ id: 13, soundName: 'ROUGH STUFF (DROP)', soundURL: './sounds/roughstuffdrop.mp3', isPlaying: false, isNew: true },
+			{ id: 39, soundName: 'NARCISSISM OF SMALL DIFFERENCES (DROP)', soundURL: './sounds/narcissismdrop.mp3', isPlaying: false, isNew: true },
+			{ id: 40, soundName: 'FORM IS EMPTINESS (DROP)', soundURL: './sounds/formisemptinessdrop.mp3', isPlaying: false, isNew: true },
 			{ id: 14, soundName: 'THIS SHOW RULES', soundURL: './sounds/thisshowrules.mp3', isPlaying: false }, 
 			{ id: 15, soundName: 'ROUGH STUFF FOLKS', soundURL: './sounds/roughstufffolks.mp3', isPlaying: false },
 			{ id: 16, soundName: 'SEINFELD NUMBER CRUNCH', soundURL: './sounds/seinfeldnumbercrunch.mp3', isPlaying: false },
