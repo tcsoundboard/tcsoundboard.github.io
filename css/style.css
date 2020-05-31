@@ -1,11 +1,11 @@
 body {
   font-family: Futura, 'Century Gothic', 'Montserrat', Arial, sans-serif;
   font-weight: bold;
-  font-size: 1.30vw; /* 1.5vw for 5 */ 
+  font-size: 1.30vw; /* 1.5vw for 5 */
   background-color: white;
   /* set padding and margin to 0 to remove default margins   */
-  padding: 0; 
-  margin: 0; 
+  padding: 0;
+  margin: 0;
 }
 
 .borderdiv {
@@ -41,7 +41,13 @@ p {
 }
 
 a {
-  color: #5BAF59;
+  color: #0033cc;
+}
+
+a:hover {
+	opacity: 50%;
+	-webkit-transition: opacity 0.15s; /* Safari prior 6.1 */
+	transition: opacity 0.25s;
 }
 
 
@@ -92,11 +98,33 @@ a {
 }
 
 /* hover effect only on web - so no sticky hover on mobile */
-@media (hover: hover) { 
-	.sound-card:hover { 
+@media (hover: hover) {
+	.sound-card:hover {
 	  background-color: #5BAF59;
 	  color: #FFFFFF;
 	}
+}
+
+/* TEXT BOX FOR STICKER SALE */
+.stickercontainer {
+	padding-bottom: 35px;
+	width: 75vw;
+	text-align: center;
+	margin: auto;
+}
+
+.stickerinfo {
+    text-align: center;
+	margin: auto;
+	border-style: solid;
+	border-width: 0.285vw; /* 4px */
+	border-color: #5BAF59;
+	padding: 20px;
+	color: #5BAF59;
+}
+
+.stickerimg {
+	width: 30%;
 }
 
 
@@ -105,7 +133,7 @@ a {
   .borderdiv {
     border-width: 12px;
   }
-  
+
   .appContainer {
 	width: 81vw;
 	display: grid;
@@ -113,7 +141,7 @@ a {
 	grid-auto-rows: 27vw;  /* this has to be appContainer width divided by 3 */
 	grid-gap: 10px;
   }
-  
+
   .logoimg {
     width: 100%;
     height: auto;
@@ -123,7 +151,7 @@ a {
     padding-right: 10px;
     padding-bottom: 30px;
   }
-  
+
   .sound-card {
 	border-width: 3px;
 	padding: 3px;
@@ -131,22 +159,35 @@ a {
 	-webkit-transition: background-color 0s, color 0s, opacity 0s; /* Safari prior 6.1 */
 	transition: background-color 0s, color 0s, opacity 0s; /* Safari prior 6.1 */
   }
-  
+
   body {
   	font-size: 2.60vw;
   }
-  
+
   .footerdiv {
   	 font-size: 2vw;		/* 1.75vw */
   	 padding-top: 50px;
   }
-  
+
   .new-badge {
   	width: 6.5vw;
   	top: -2.3vw;
     right: -2.3vw;
   }
 
+  /* TEXT BOX FOR STICKER SALE */
+  .stickercontainer {
+	padding-bottom: 30px;
+	width: 81vw;
+  }
+
+  .stickerinfo {
+  	padding: 20px;
+  	border-width: 3px;
+  }
+
+  .stickerimg {
+	width: 55%;
+  }
+
 }
-
-
