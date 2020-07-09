@@ -105,28 +105,6 @@ a:hover {
 	}
 }
 
-/* TEXT BOX FOR STICKER SALE */
-.stickercontainer {
-	padding-bottom: 35px;
-	width: 75vw;
-	text-align: center;
-	margin: auto;
-}
-
-.stickerinfo {
-    text-align: center;
-	margin: auto;
-	border-style: solid;
-	border-width: 0.285vw; /* 4px */
-	border-color: #5BAF59;
-	padding: 20px;
-	color: #5BAF59;
-}
-
-.stickerimg {
-	width: 24%;
-}
-
 
 @media only screen and (max-width: 768px) {
 
@@ -173,21 +151,6 @@ a:hover {
   	width: 6.5vw;
   	top: -2.3vw;
     right: -2.3vw;
-  }
-
-  /* TEXT BOX FOR STICKER SALE */
-  .stickercontainer {
-	padding-bottom: 30px;
-	width: 81vw;
-  }
-
-  .stickerinfo {
-  	padding: 20px;
-  	border-width: 3px;
-  }
-
-  .stickerimg {
-	width: 50%;
   }
 
 }
