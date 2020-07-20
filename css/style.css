@@ -1,5 +1,5 @@
 body {
-  font-family: Futura, 'Century Gothic', 'Montserrat', Arial, sans-serif;
+  font-family: Futura, 'FuturaBold', Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1.30vw; /* 1.5vw for 5 */
   background-color: white;
@@ -161,4 +161,11 @@ a:hover {
     right: -2.3vw;
   }
 
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../fonts/futura-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
