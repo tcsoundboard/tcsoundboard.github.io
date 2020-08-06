@@ -108,7 +108,7 @@ class App extends React.Component {
 			{ id: 18, soundName: 'TIME CRISIS ENEMIES (DROP)', soundURL: './sounds/tcenemies.mp3', isPlaying: false },
 			{ id: 19, soundName: 'THIS IS YOUR SONG (DROP)', soundURL: './sounds/thisisyoursong.mp3', isPlaying: false },
 			{ id: 20, soundName: 'LOVE, I DON\'T GET ENOUGH OF IT (DROP)', soundURL: './sounds/loveidontgetenoughofit.mp3', isPlaying: false },
-            { id: 57, soundName: 'THIS SHOW RULES (DROP)', soundURL: './sounds/thisshowrulesdrop.mp3', isPlaying: false, isNew: true },
+            { id: 57, soundName: 'THIS SHOW RULES (DROP)', soundURL: './sounds/thisshowrulesdrop.mp3', isPlaying: false },
 			{ id: 21, soundName: 'THIS SHOW RULES', soundURL: './sounds/thisshowrules.mp3', isPlaying: false },
 			{ id: 22, soundName: 'ROUGH STUFF FOLKS', soundURL: './sounds/roughstufffolks.mp3', isPlaying: false },
 			{ id: 23, soundName: 'SEINFELD NUMBER CRUNCH', soundURL: './sounds/seinfeldnumbercrunch.mp3', isPlaying: false },
@@ -141,10 +141,11 @@ class App extends React.Component {
 			{ id: 50, soundName: 'WHOA, HOLD UP GIRL...', soundURL: './sounds/whoaholdupgirl.mp3', isPlaying: false },
 			{ id: 51, soundName: 'AND IT\'S EASY TO SEE', soundURL: './sounds/anditseasytosee.mp3', isPlaying: false },
 			{ id: 52, soundName: 'DOWN MEXICO WAY', soundURL: './sounds/downmexicoway.mp3', isPlaying: false },
-			{ id: 53, soundName: 'FRICKIN RANDOM', soundURL: './sounds/frickinrandom.mp3', isPlaying: false, isNew: true },
-			{ id: 54, soundName: 'WHAT ABOUT VAMPIRE, MAN?', soundURL: './sounds/whataboutvampireman.mp3', isPlaying: false, isNew: true },
+			{ id: 53, soundName: 'FRICKIN RANDOM', soundURL: './sounds/frickinrandom.mp3', isPlaying: false },
+			{ id: 54, soundName: 'WHAT ABOUT VAMPIRE, MAN?', soundURL: './sounds/whataboutvampireman.mp3', isPlaying: false },
             { id: 55, soundName: 'TIME CRISIS, IN A TIME... OF CRISIS', soundURL: './sounds/inatimeofcrisis.mp3', isPlaying: false, isNew: true },
             { id: 56, soundName: 'STRANGE AND UNCERTAIN TIMES', soundURL: './sounds/strangeanduncertaintimes.mp3', isPlaying: false, isNew: true },
+			{ id: 58, soundName: 'DO YOU PLAY WORDS WITH FRIENDS?', soundURL: './sounds/wordswithfriends.mp3', isPlaying: false, isNew: true },
 	  	]};
 
 
