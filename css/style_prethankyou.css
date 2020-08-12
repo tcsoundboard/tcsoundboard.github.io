@@ -105,6 +105,20 @@ a:hover {
 	}
 }
 
+@media only screen and (max-width: 1024px) {
+  .appContainer {
+	width: 75vw;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 15vw;  /* this has to be appContainer width divided by 5 */
+	grid-gap: 0.9vw;
+  }
+  
+  body {
+  	font-size: 1.5vw;
+  }
+
+}
+
 
 @media only screen and (max-width: 768px) {
 
