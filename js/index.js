@@ -88,7 +88,8 @@ class App extends React.Component {
 		super(props);
 		this.state = {
 	  	sounds: [
-	  	 	{ id: 1, soundName: 'TIME CRISIS INTRO (DROP)', soundURL: './sounds/tcintro.mp3', isPlaying: false },
+	  		{ id: 61, soundName: 'TIME CRISIS INTRO (DROP)', soundURL: './sounds/tcintro.mp3', isPlaying: false, isNew: true },
+	  	 	{ id: 1, soundName: 'TIME CRISIS INTRO [BEATS 1] (DROP)', soundURL: './sounds/tcintroold.mp3', isPlaying: false },
 	  	 	{ id: 2, soundName: '8 MINUTE CAPE COD (DROP)', soundURL: './sounds/8minutecapecod.mp3', isPlaying: false },
 	  	 	{ id: 3, soundName: 'SWEET CHILI HEAT® WORLD PREMIERE (DROP)', soundURL: './sounds/tcsweetchilipremiere.mp3', isPlaying: false },
 	  	 	{ id: 4, soundName: 'TASTEFUL PALETTE OF THE 1970\'S (DROP)', soundURL: './sounds/tastefulpalette.mp3', isPlaying: false },
@@ -143,9 +144,11 @@ class App extends React.Component {
 			{ id: 52, soundName: 'DOWN MEXICO WAY', soundURL: './sounds/downmexicoway.mp3', isPlaying: false },
 			{ id: 53, soundName: 'FRICKIN RANDOM', soundURL: './sounds/frickinrandom.mp3', isPlaying: false },
 			{ id: 54, soundName: 'WHAT ABOUT VAMPIRE, MAN?', soundURL: './sounds/whataboutvampireman.mp3', isPlaying: false },
-            { id: 55, soundName: 'TIME CRISIS, IN A TIME... OF CRISIS', soundURL: './sounds/inatimeofcrisis.mp3', isPlaying: false, isNew: true },
-            { id: 56, soundName: 'STRANGE AND UNCERTAIN TIMES', soundURL: './sounds/strangeanduncertaintimes.mp3', isPlaying: false, isNew: true },
-			{ id: 58, soundName: 'DO YOU PLAY WORDS WITH FRIENDS?', soundURL: './sounds/wordswithfriends.mp3', isPlaying: false, isNew: true },
+            { id: 55, soundName: 'TIME CRISIS, IN A TIME... OF CRISIS', soundURL: './sounds/inatimeofcrisis.mp3', isPlaying: false },
+            { id: 56, soundName: 'STRANGE AND UNCERTAIN TIMES', soundURL: './sounds/strangeanduncertaintimes.mp3', isPlaying: false },
+			{ id: 58, soundName: 'DO YOU PLAY WORDS WITH FRIENDS?', soundURL: './sounds/wordswithfriends.mp3', isPlaying: false },
+			{ id: 59, soundName: 'GUACAMOLE TECHNOLOGY', soundURL: './sounds/guacamoletechnology.mp3', isPlaying: false, isNew: true },
+			{ id: 60, soundName: 'DAMN, HE WENT NUCLEAR', soundURL: './sounds/hewentnuclear.mp3', isPlaying: false, isNew: true },
 	  	]};
 
 
