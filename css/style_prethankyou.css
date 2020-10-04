@@ -175,3 +175,34 @@ a:hover {
     font-weight: bold;
     font-style: normal;
 }
+
+/* DARK MODE */
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #202225;
+		color: #dcddde;
+	}
+	
+	a {
+  		color: #005ae3;
+	}
+	
+	.sound-card {
+		background-color: #202225;
+	}
+	
+	.sound-card:active {
+  		color: #202225;
+	}
+	
+	@media (hover: hover) {
+		.sound-card:hover {
+	  		color: #202225;
+		}
+	}
+	
+	.borderdiv {
+  		border-color: #0047b3;
+	}
+}
