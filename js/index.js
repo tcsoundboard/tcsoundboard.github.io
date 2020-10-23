@@ -149,6 +149,7 @@ class App extends React.Component {
 			{ id: 58, soundName: 'DO YOU PLAY WORDS WITH FRIENDS?', soundURL: './sounds/wordswithfriends.mp3', isPlaying: false },
 			{ id: 59, soundName: 'GUACAMOLE TECHNOLOGY', soundURL: './sounds/guacamoletechnology.mp3', isPlaying: false, isNew: true },
 			{ id: 60, soundName: 'DAMN, HE WENT NUCLEAR', soundURL: './sounds/hewentnuclear.mp3', isPlaying: false, isNew: true },
+			{ id: 62, soundName: 'SEINFELD, ENHANCE', soundURL: './sounds/seinfeldenhance.mp3', isPlaying: false, isNew: true },
 	  	]};
 
 
